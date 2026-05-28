@@ -1,4 +1,7 @@
 package pl.korzec.githubrepositoriesapi;
 
-public record ErrorResponse() {
+public record ErrorResponse(
+        int status,
+        String message
+) {
 }
