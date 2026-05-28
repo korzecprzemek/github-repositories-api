@@ -14,7 +14,7 @@ public class RepositoryController {
         this.repositoryService = repositoryService;
     }
     @GetMapping("/repositories/{username}")
-    List<Object> getRepositories(@PathVariable String username) {
+    List<RepositoryResponse> getRepositories(@PathVariable String username) {
         return repositoryService.getRepositories(username);
     }
 }

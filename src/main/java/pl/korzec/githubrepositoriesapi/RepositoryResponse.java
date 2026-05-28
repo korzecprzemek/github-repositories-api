@@ -1,4 +1,10 @@
 package pl.korzec.githubrepositoriesapi;
 
-public record RepositoryResponse() {
+import java.util.List;
+
+public record RepositoryResponse(
+        String repositoryName,
+        String ownerLogin,
+        List<BranchResponse> branches
+) {
 }
